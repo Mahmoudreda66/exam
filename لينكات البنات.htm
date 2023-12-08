@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Degla Exam Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 200vh;
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: inline;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        label {
+            color: #66CCFF;
+            margin-bottom: 1px;
+        }
+
+        input {
+            padding: 15px;
+            width: 90%;
+            border: 1px solid #ff0000;
+            border-radius: 1px;
+            margin-bottom: 1px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color:#000000;font-family:Times New Roman, Times, serif;font-size:300%;">Degla Exam Links</h1>
+        <label for="code-input">
+            <h1 dir="rtl" ;lang="ar" ; style="text-align:right;font-size:160%;">اكتبي كود امتحان الجمعة:</h1>
+        </label>
+        <input type="text" id="code-input" placeholder="Enter code">
+
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align:center;font-size:55%;color:red;">This Tool Powerd By:</h3>
+    <h1 dir="rtl" ; lang="ar" ; style="text-align:center;font-size:120%;color:red;">حُــسَــيْــن
+        أَبُــوعَــبْــدُالــلّٰــه</h1>
+    <br>
+    <br>
+    <button onclick="redirect()">Get Your Link</button>
+
+
+    <script>
+        // Function to redirect based on the entered code
+        function redirect() {
+            var codeInput = document.getElementById("code-input").value;
+            var link;
+
+            if (codeInput >= 1 && codeInput < 100) {
+                link = "https://docs.google.com/forms/d/e/1FAIpQLSclsrEwV9MCdvpoUUATuqCjcty26C1Miz2EYOYDrboNG4CF7w/viewform?usp=sf_link";
+            } else if (codeInput >= 100 && codeInput < 200) {
+                link = "https://docs.google.com/forms/d/e/1FAIpQLScBeGr8OKUUg2XPrkY2nknN4BRgO8v3H3cG-kPYAuMbH5UJLw/viewform?usp=sf_link";
+            } else if (codeInput >= 200 && codeInput < 300) {
+                link = "https://docs.google.com/forms/d/e/1FAIpQLScPafxAqalrAv1Jh6X30ndZaDuNKjQuAXE0c3RBfoWtIetNBA/viewform?usp=sf_link";
+            } else if (codeInput >= 300 && codeInput < 400) {
+                link = "https://docs.google.com/forms/d/e/1FAIpQLSdCGiGLPn60XeptiTxi3i1xe_idwwjt61GZZw8pqewZl08ceg/viewform?usp=sf_link";
+            } else if (codeInput >= 400 && codeInput < 500) {
+                link = "https://docs.google.com/forms/d/e/1FAIpQLSfDYybglkp8MobBgLDAA98Nh89tnMhOTDFd2Xks4-EgjuF9tw/viewform?usp=sf_link";
+            } else if (codeInput >= 500 && codeInput < 600) {
+                link = "https://docs.google.com/forms/d/e/1FAIpQLSc7URQXYCQtI4UJQGAxxwkYrUR4HsxpvOeaSyoIG8f_DcMMfw/viewform?usp=sf_link";
+            } else if (codeInput >= 600 && codeInput < 700) {
+                link = "https://docs.google.com/forms/d/e/1FAIpQLSdvgfeFfNxOmgLreLqgYBzUk4WB879TlKsaIuqnNi38xloLmw/viewform?usp=sf_link";
+            } else if (codeInput >= 700 && codeInput < 800) {
+                link = "https://docs.google.com/forms/d/e/1FAIpQLSeDRv1sJzPLzkCqJc3E0WqClWMuGY9TR3nvO7OHZLEEXbAUrA/viewform?usp=sf_link";
+            }
+            else if (codeInput >= 800 && codeInput < 900) {
+                link = "https://docs.google.com/forms/d/e/1FAIpQLSdfQqLzVZQX6V4gzxn4fLLzE8rHt7Bxr8edlLX0nOJc2Lf5NA/viewform?usp=sf_link";
+            }
+            else if (codeInput >= 900 && codeInput < 1000) {
+                link = "https://docs.google.com/forms/d/1f1aD9wtt3K6Mafn2lJo6nPkEvvrwhtvATrIZFi4Ltbg/edit?usp=drive_web";
+            }
+            else {
+                alert("Invalid code.");
+                return;
+            }
+
+            location.href = link;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
